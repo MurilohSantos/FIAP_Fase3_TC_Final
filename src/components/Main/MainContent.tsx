@@ -6,9 +6,10 @@ const Main = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 20px; 
   align-items: center;
   background-color: #3330300f
+  
 `;
 
 const MainContent: React.FC<{ children: React.ReactNode }> = ({ children }) => {
