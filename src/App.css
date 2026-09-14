@@ -1,0 +1,579 @@
+.post-list {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px 0 50px;
+}
+
+.instagram-post {
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+/* Cabeçalho */
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #efefef;
+}
+
+.post-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #833ab4,
+    #fd1d1d,
+    #fcb045
+  );
+
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post-header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-header-info strong {
+  font-size: 14px;
+  color: #262626;
+}
+
+.post-header-info span {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+/* Conteúdo */
+
+.post-content {
+  padding: 25px;
+}
+
+.post-content h1 {
+  margin: 0 0 20px;
+
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  color: #262626;
+}
+
+.post-description {
+  min-height: 250px;
+
+  padding: 25px;
+
+  background: #fafafa;
+
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+
+  color: #444;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  white-space: pre-wrap;
+}
+
+/* Rodapé */
+
+.post-footer {
+  padding: 12px 16px 16px;
+  border-top: 1px solid #efefef;
+}
+
+.post-actions {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+
+.post-actions button {
+  border: none;
+  background: transparent;
+
+  font-size: 27px;
+
+  cursor: pointer;
+
+  padding: 0;
+
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.post-actions button:hover {
+  transform: scale(1.1);
+}
+
+/* Like */
+
+.post-actions button.liked {
+  color: #ed4956;
+}
+
+.post-actions button.liked:hover {
+  color: #d93644;
+  transform: scale(1.15);
+}
+
+.post-status {
+  font-size: 13px;
+  color: #8e8e8e;
+}
+
+
+.new-post-page {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+}
+
+.new-post-page h1 {
+  margin-bottom: 25px;
+  color: #262626;
+}
+
+.new-post-form {
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 12px 14px;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-family: inherit;
+
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #833ab4;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-checkbox input {
+  width: 18px;
+  height: 18px;
+}
+
+.form-checkbox label {
+  color: #262626;
+}
+
+.form-error {
+  color: #ed4956;
+  margin-bottom: 20px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.form-buttons button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button-cancel {
+  background: #efefef;
+  color: #262626;
+}
+
+.button-submit {
+  background: #0095f6;
+  color: #ffffff;
+}
+
+.button-submit:hover {
+  background: #0077c8;
+}
+
+.button-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.post-actions button.delete-button {
+  color: #ed4956;
+}
+
+.post-actions button.delete-button:hover {
+  color: #c62828;
+  transform: scale(1.15);
+}
+
+.login-page {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+
+  background: #ffffff;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+
+  padding: 35px;
+
+  box-sizing: border-box;
+}
+
+.login-card h1 {
+  margin: 0;
+  text-align: center;
+
+  color: #262626;
+}
+
+.login-subtitle {
+  text-align: center;
+
+  color: #8e8e8e;
+
+  margin: 10px 0 30px;
+}
+
+.login-card .form-group {
+  margin-bottom: 20px;
+}
+
+.login-card input {
+  box-sizing: border-box;
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+.login-card input:focus {
+  border-color: #833ab4;
+}
+
+.login-button {
+  width: 100%;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 13px;
+
+  background: #ed145b;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.login-button:hover {
+  opacity: 0.9;
+}
+
+.login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-error {
+  color: #ed4956;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.read-more-button {
+  display: block;
+  margin-top: 12px;
+
+  border: none;
+  background: transparent;
+
+  padding: 0;
+
+  color: #0095f6;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.read-more-button:hover {
+  text-decoration: underline;
+}
+
+.post-actions button.liked {
+  color: #ed4956;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 20px;
+  padding: 10px 18px;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 20px;
+
+  background: #ffffff;
+  color: #262626;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.back-button:hover {
+  background: #f5f5f5;
+  transform: translateX(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.back-button:active {
+  transform: translateX(-1px);
+}
+
+.read-more-button {
+  display: block;
+  width: fit-content;
+
+  margin-top: 12px;
+
+  color: #0095f6;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.read-more-button:hover {
+  text-decoration: underline;
+}
+
+.student-search {
+  position: relative;
+
+  width: 100%;
+  max-width: 650px;
+
+  margin: 0 auto 25px;
+}
+
+.student-search input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 14px 45px 14px 18px;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 25px;
+
+  background: #ffffff;
+
+  font-size: 15px;
+  color: #262626;
+
+  outline: none;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.2s ease;
+}
+
+.student-search input:focus {
+  border-color: #0095f6;
+  box-shadow: 0 0 0 2px rgba(0, 149, 246, 0.1);
+}
+
+.student-search input::placeholder {
+  color: #8e8e8e;
+}
+
+.student-search button {
+  position: absolute;
+
+  right: 15px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: none;
+  background: transparent;
+
+  color: #8e8e8e;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.student-search button:hover {
+  color: #262626;
+}
+
+.no-results {
+  text-align: center;
+
+  margin-top: 40px;
+
+  color: #8e8e8e;
+
+  font-size: 15px;
+}
+
+.post-search {
+  position: relative;
+
+  width: 100%;
+  max-width: 650px;
+
+  margin: 0 auto 25px;
+}
+
+.post-search input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 14px 45px 14px 18px;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 25px;
+
+  background: #ffffff;
+
+  font-size: 15px;
+  color: #262626;
+
+  outline: none;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.2s ease;
+}
+
+.post-search input:focus {
+  border-color: #0095f6;
+
+  box-shadow:
+    0 0 0 2px rgba(0, 149, 246, 0.1);
+}
+
+.post-search input::placeholder {
+  color: #8e8e8e;
+}
+
+.post-search button {
+  position: absolute;
+
+  right: 15px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: none;
+  background: transparent;
+
+  color: #8e8e8e;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.post-search button:hover {
+  color: #262626;
+}
+
+.no-results {
+  text-align: center;
+
+  margin-top: 40px;
+
+  color: #8e8e8e;
+
+  font-size: 15px;
+}
